@@ -8,6 +8,8 @@ class QuestionsController < ApplicationController
       @answer = 'Great!'
     elsif @question.include? '?'
       @answer = 'Silly question, get dressed and go to work!'
+    elsif @question == ""
+      @answer = "But you didn't ask me anything..."
     else
       @answer = "I don't care, get dressed and go to work!"
     end

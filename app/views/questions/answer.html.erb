@@ -1,5 +1,13 @@
+<div class="answer-contain">
+<div class="question">
 <h1>Your Question:</h1>
 <h2><%= @question.capitalize %></h2>
+</div>
 
+<div class="answer">
 <h1>Coach Says:</h1>
 <h2><%= @answer %></h2>
+</div>
+</div>
+
+<h3><%= link_to 'Do you feel lucky?', ask_path %></h3>
